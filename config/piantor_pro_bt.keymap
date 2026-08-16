@@ -95,7 +95,7 @@
 
         bindings = <
 // | Out TOG   |      F2 |   mute   |   V+       | play/stp |  @     |  |  F12     |  F7     |  F8      |  F9      | Print    | vs_scan_chars |
-     &out OUT_TOG &kp F2  &kp C_MUTE &kp C_VOL_UP &kp C_PP    &none       &kp F12    &kp F7    &kp F8     &kp F9     &kp PRTSC  &kb VS_SCAN_CHARS
+     &out OUT_TOG &kp F2  &kp C_MUTE &kp C_VOL_UP &kp C_PP    &none       &kp F12    &kp F7    &kp F8     &kp F9     &kp PRTSC  &kp VS_SCAN_CHARS
 // | none      |    caps |   Prev   |   V-       |   Next   |   @p   |  | F11      |  F4     |  F5      |  F6      | Ins      | none     |
      &trans    &kp CAPS   &kp C_PREV &kp C_VOL_DN &kp C_NEXT  &none       &kp F11    &kp F4    &kp F5     &kp F6     &kp INS    &trans
 // | ClearBLU  |   /Ble   |   Ble0  |   Ble1     |   Ble2   |   ---  |  | F10      |  F1     |  F2      |  F3      | ---      | none     |
