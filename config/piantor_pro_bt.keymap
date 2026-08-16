@@ -42,7 +42,7 @@
 // open Slack
 #define SLACK LG(LA(LC(S)))
 // open Chrome
-#define BROWSER LG(LA(LC(C)))
+#define BROWSER LG(LA(LC(B)))
 
 // TODO: use
 // #define LR_DOWN LA(DOWN)
