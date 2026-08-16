@@ -33,6 +33,16 @@
 #define SUBL1 LG(LA(V))
 // vorssaint copy text from screen
 #define VS_SCAN_CHARS LG(LA(LC(T)))
+// open Zed
+#define ZED LG(LA(LC(Z)))
+// open Sublime merge
+#define SUBMERGE LG(LA(LC(M)))
+// open Iterm
+#define ITERM LG(LA(LC(I)))
+// open Slack
+#define SLACK LG(LA(LC(S)))
+// open Chrome
+#define BROWSER LG(LA(LC(C)))
 
 // TODO: use
 // #define LR_DOWN LA(DOWN)
@@ -144,13 +154,13 @@
 // ----------------------------------------------------------------------------------------------------------------------------------------
 // |    ---   |    ---    |    up     |    ---   |    ---   |   ---   |   |    ---    |    ---    |    ScrUp  |    ---    |    ---    | ---      |
 // |    ---   |    left   |    down   |    right |    ---   |   ---   |   |    ---    |   ScrLeft |   ScrDown |  ScrRight |    ---    | ---      |
-// |    ---   |    ---    |    ---    |    ---   |    ---   |   ---   |   |    ---    |    ---    |    ---    |    ---    |    ---    | ---      |
+// |    ---   |    ---    |    ---    |    ---   |    ---   |   ---   |   |  Browser  |    Zed    |   Merge   |  Iterm    |  Slack    | ---      |
 //                                    |    ---   |    ---   |   ---   |   |    ---    |    ---    |    ---    |
         bindings = <
-          &none   &none    &none          &mmv MOVE_UP   &none           &none        &none    &none          &msc SCRL_UP   &none           &none     &none
-          &none   &none    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none        &none    &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &none     &none
-          &none   &none    &none          &none          &none           &none        &none    &none          &none          &none           &none     &none
-                                          &none          &none           &none        &none    &none          &none
+          &none   &none    &none          &mmv MOVE_UP   &none           &none   &none       &none          &msc SCRL_UP   &none           &none     &none
+          &none   &none    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none   &none       &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &none     &none
+          &none   &none    &none          &none          &none           &none   &kp BROSWER &kp ZED        &kp MERGE      &kp ITERM       &kp SLACK &none
+                                          &none          &none           &none   &none       &none          &none
         >;
       };
     };
